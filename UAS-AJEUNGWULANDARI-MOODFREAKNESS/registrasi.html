@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <style type="text/css">
+        ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            list-style-type: none;
+            background: grey;
+            height: 50px;
+        }
+        
+        li {
+            font-weight: bold;
+            float: left;
+            margin-left: 20px;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            color: black;
+        }
+        
+        footer {
+            background-color: grey;
+            text-align: center;
+            font-weight: lighter;
+            color: black;
+            font-size: 13px;
+        }
+        
+        legend {
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .button {
+            background-color: black;
+            height: 50px;
+            font-weight: bold;
+            width: 100%;
+            color: #fff;
+            display: inline-block;
+            text-align: center;
+            padding-top: 10px;
+            border-color: transparent;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        
+        label {
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="informasi.html">Informasi</a></li>
+        <li><a href="registrasi.html" style="color: black;">Register</a></li>
+        <li><a href="Login.html">Login</a></li>
+    </ul>
+    <div style="background-image: url(baju8.jpeg); height: 100%; width: 100%; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4" style="margin-top: 15%;">
+                    <fieldset>
+                        <form action="config/register.php" method="POST">
+                            <legend style="text-align: center;">REGISTRASI</legend>
+                            <label>Username :</label>
+                            <input type="text" placeholder="Masukan Username" style="height: 50px; width: 100%; border-color: white;" name="username" id="username">
+                            <label>Email :</label>
+                            <input type="email" placeholder="Masukan Email" style="height: 50px; width: 100%; border-color: white;" name="email" id="email">
+                            <label>Password :</label>
+                            <input type="password" placeholder="Masukan Password" style="height: 50px; width: 100%; border-color:white;" name="password" id="pass">
+                            <br><br>
+                            <button class="button" type="submit" name="submit" id="daftar">Daftar</button>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>@Copyright by 18111008_AJEUNGWULANDARI_TIFRP18CIDB</footer>
+</body>
+
+</html>
